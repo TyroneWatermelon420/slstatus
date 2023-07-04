@@ -10,10 +10,10 @@ static const char unknown_str[] = "n/a";
 #define MAXLEN 2048
 
 static const struct arg args[] = {
-	/* function format          argument */
-	//{ wifi_essid, "^b#004b72^^c#d4d4d4^ 󰤨 %s ^d^", "wlp0s20u2" },
+	//function format          argument
+	//{ wifi_essid, "^b#004b72^^c#d4d4d4^ 󰤨 %s ^d^", "eth0" },
 	{ cpu_perc, "[CPU: %s%%] ", NULL },
-	//{ run_command, ": %4s | ", "pamixer --get-volume-human | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ run_command, ": %4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
     { ram_perc, "[ %s%%] ", NULL },
 	{ datetime, "[ %s ", "%a %d %b  %I:%M %p]" },
 };
