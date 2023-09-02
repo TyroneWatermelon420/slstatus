@@ -12,8 +12,8 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	//function format          argument
 	//{ wifi_essid, "^b#004b72^^c#d4d4d4^ 󰤨 %s ^d^", "eth0" },
-	{ cpu_perc, "[CPU: %s%%] ", NULL },
-	{ run_command, ":%4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ cpu_perc, "^b#81A1C1^[CPU: %s%%]", NULL },
+	{ run_command, " ^b#5e81ac^:%4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
     { ram_perc, "[ %s%%] ", NULL },
 	{ datetime, "[ %s ", "%a %d %b  %I:%M %p]" },
 };
