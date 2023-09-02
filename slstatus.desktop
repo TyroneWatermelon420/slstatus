@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Slstatus
+Comment=dwm status bar
+Exec=slstatus
+Icon=slstatus
