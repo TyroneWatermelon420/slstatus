@@ -16,11 +16,11 @@ static const char vol[]         = "[ `amixer sget Master | tail -n 1 | awk '{pri
 static const struct arg args[] = {
 	//function format          argument
 	//{ wifi_essid, "^b#004b72^^c#d4d4d4^ 󰤨 %s ^d^", "eth0" },
-	{ cpu_perc, "[CPU: %s%%]", NULL },
-	{ run_command, "[:%4s]", vol },
-  { ram_perc, "[ %s%%]", NULL },
-  { battery_perc, "[ %s%%]", "BAT0" },
-	{ datetime, "[ %s ", "%a %d %b  %I:%M %p]" },
+	{ cpu_perc, "CPU: %s%% ", NULL },
+	{ run_command, ":%4s ", vol },
+  { ram_perc, " %s%% ", NULL },
+  { battery_perc, " %s%% ", "BAT0" },
+	{ datetime, " %s ", "%a %d %b  %I:%M %p" },
 };
 
 /*
